@@ -1,4 +1,5 @@
 #XML Project
+This repository contains the HTML, CSS, and XSLT templates for the XML assignment in Carlos Evia's *Creating User Documentation* ENGL 3814 at Virginia Tech in the fall 2013 semester.
 
 ##Overview
 In Chapter 2 of TW101 (pages 40-46 to be precise), we read that technical writers frequently have to write content based on templates and structures. Sometimes, technical writers even have to develop the templates and structure definitions. For this assignment, however, the template and structure will be defined for us, just like it is oftentimes defined for technical writers by the company or the client. Your only concern will be creating good, task-oriented content that can be transformed effectively into a web-based format for the end user.
@@ -22,4 +23,5 @@ Your final deliverable will be a .zip file that contains the following:
 * Several XSLT (and one CSS) files to transform the XML to HTML by filters such as gadget, audience or difficulty level
 * Your “images” folder
 * The HTML files resulting of your transformations
+
 These deliverables should be turned in as a single .zip file via the Scholar assignment page by 11:55 p.m. on the due date.
