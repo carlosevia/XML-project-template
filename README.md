@@ -29,3 +29,5 @@ These deliverables should be turned in as a single .zip file via the Scholar ass
 ####Ingredients
 * Sweet Bootstrap 3 via [Bootstrap CDN](http://www.bootstrapcdn.com/)
 * Johann Burkard's [xslt.js](http://johannburkard.de/software/xsltjs/), which has been helping Concho River's transformations for ages 
+
+*(Yes, this is my lame way to introduce structured authoring and DITA in the course. Real DITA is coming in the next unit and assignments(s))*
