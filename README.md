@@ -25,3 +25,7 @@ Your final deliverable will be a .zip file that contains the following:
 * The HTML files resulting of your transformations
 
 These deliverables should be turned in as a single .zip file via the Scholar assignment page by 11:55 p.m. on the due date.
+
+####Ingredientes
+* Sweet Bootstrap 3 via [Bootstrap CDN](http://www.bootstrapcdn.com/)
+* Johann Burkard's [xslt.js](http://johannburkard.de/software/xsltjs/), which has been helping Concho River's transformations for ages 
