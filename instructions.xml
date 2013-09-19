@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <instructions>
-<gadget>Cosa</gadget>
+<gadget>
+<shortname>Name</shortname>
+<model>Model</model>
+<make>Make</make>
+</gadget>
+
+<genres>
+<genre>
+<title>topic1</title>
+<url>1.htm</url>
+
+</genre>
+
+<genre>
+<title>topic2</title>
+<url>2.html</url>
+</genre>
+
+
+</genres>
 
 </instructions>
