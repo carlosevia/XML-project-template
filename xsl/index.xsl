@@ -14,8 +14,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css" rel="stylesheet"/>
-
-   
+    
+     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -56,8 +56,16 @@
       <div class="jumbotron">
         <h1>Instructions for the <xsl:value-of select="instructions/gadget/make"/>&#160;<xsl:value-of select="instructions/gadget/model"/></h1>
         <p><xsl:value-of select="instructions/gadget/welcome"/></p>
-        <img class="img-responsive" src="http://placekitten.com/g/400/300"/>
-       
+        
+         <div class="row">
+  <div class="col-md-6"><img class="img-responsive" src="http://placekitten.com/g/400/300"/>
+	  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+  </div>
+  <div class="col-md-6"><img class="img-responsive" src="http://placekitten.com/g/400/300"/>
+	  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+  </div>
+</div>
+   
       </div>
       <footer><p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></p></footer>
 
