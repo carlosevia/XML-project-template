@@ -40,10 +40,10 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
             
-            <xsl:for-each select="instructions/genres/genre">
+            <xsl:for-each select="instructions/modules/module">
       
            
-            <li><a href="{url}"><xsl:value-of select="title"/></a></li>
+            <li><a href="{url}"><xsl:value-of select="menutitle"/></a></li>
             </xsl:for-each>
                       </ul>
                  </div><!--/.nav-collapse -->
@@ -55,11 +55,12 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Instructions for the <xsl:value-of select="instructions/gadget/make"/>&#160;<xsl:value-of select="instructions/gadget/model"/></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><img class="img-responsive" src="http://placekitten.com/g/400/300"/></p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar">Lorem ipsum</a>
+        <p><xsl:value-of select="instructions/gadget/welcome"/></p>
+        <img class="img-responsive" src="http://placekitten.com/g/400/300"/>
        
       </div>
+      <footer><p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></p></footer>
+
 
     </div> <!-- /container -->
 
@@ -70,7 +71,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   </body>
-</html>
+  </html>
 
 </xsl:template> 
 </xsl:stylesheet>
