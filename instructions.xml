@@ -65,13 +65,6 @@
 <picture>img/module1.jpg</picture>
 </module>
 
-<sources>
-	<source>
-		<reference>some source</reference>
-	</source>
-
-</sources>
-
 </modules>
 </gadget>
 
@@ -140,14 +133,18 @@
 </module>
 
 
-<sources>
-	<source>
-		<reference>some source</reference>
-	</source>
-
-</sources>
 
 </modules>
 </gadget>
 </gadgets>
+
+<sources>
+	<source>
+		<reference>some source</reference>
+		</source>
+	<source>
+		<reference>other source</reference>
+	</source>
+
+</sources>
 </instructions>
