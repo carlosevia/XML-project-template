@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Instructions for <xsl:value-of select="instructions/gadget/shortname"/></title>
+    <title>Instructions for my favorite gadgets</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css" rel="stylesheet"/>
@@ -34,17 +34,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><xsl:value-of select="instructions/gadget/shortname"/></a>
+          <a class="navbar-brand" href="index.html">Home</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            
-            <xsl:for-each select="instructions/modules/module">
-      
            
-            <li><a href="{url}"><xsl:value-of select="menutitle"/></a></li>
-            </xsl:for-each>
+            <li class="active"><a href="sources.html">Sources</a></li>
                       </ul>
                  </div><!--/.nav-collapse -->
       </div>
@@ -54,16 +49,31 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Instructions for the <xsl:value-of select="instructions/gadget/make"/>&#160;<xsl:value-of select="instructions/gadget/model"/></h1>
-        <p><xsl:value-of select="instructions/gadget/welcome"/></p>
+        <h1>Instructions for my favorite gadgets</h1>
+        <p><xsl:value-of select="instructions/intro"/></p>
         
          <div class="row">
-  <div class="col-md-6"><img class="img-responsive" src="http://placekitten.com/g/400/300"/>
-	  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+           
+           <xsl:for-each select="instructions/gadgets/gadget[@id='1']">
+  <div class="col-md-6">
+    <img class="img-responsive">
+      <xsl:attribute name="src">
+        <xsl:value-of select="picture"/>
+      </xsl:attribute>
+    </img>
+  
+    <p><a class="btn btn-primary btn-lg" href="gadget1.html"><xsl:value-of select="shortname"/></a></p>
   </div>
-  <div class="col-md-6"><img class="img-responsive" src="http://placekitten.com/g/400/300"/>
-	  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+           </xsl:for-each>
+           <xsl:for-each select="instructions/gadgets/gadget[@id='2']">  
+             <div class="col-md-6"> <img class="img-responsive">
+               <xsl:attribute name="src">
+                 <xsl:value-of select="picture"/>
+               </xsl:attribute>
+             </img>
+    <p><a class="btn btn-primary btn-lg" href="gadget2.html"><xsl:value-of select="shortname"/></a></p>
   </div>
+           </xsl:for-each>
 </div>
    
       </div>
